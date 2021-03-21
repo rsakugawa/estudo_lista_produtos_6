@@ -1,0 +1,35 @@
+<mvc:View
+    controllerName="estudolistaprodutos.controller.ViewList"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					
+					<subHeader>
+					<Toolbar> 
+					<SearchField liveChange="onLiveChange"/>
+					</Toolbar>
+					</subHeader>
+
+					<content> 
+					<List id = "list"
+					      items ="{ path: '/Products',
+						            suspended: true}"
+					      growing="true"
+					      growingScrollToLoad="true"
+						  growingThreshold="15">
+					<items>
+					<StandardListItem title="{Id}" 
+					                  description="{Name}" 
+									  icon="{ImageUrl}"/>
+					</items>
+					</List>	
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
