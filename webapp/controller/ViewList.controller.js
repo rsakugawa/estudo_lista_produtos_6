@@ -24,7 +24,7 @@ sap.ui.define([
 			  
 			if(sNewValue){
 
-				// Exemplo de filtro com declaração completa
+				// Exemplo de filtro com declaração completa ..
 				//aFilter.push( new Filter({
 				//	path: "Name",
 				//	operator: FilterOperator.Contains,
