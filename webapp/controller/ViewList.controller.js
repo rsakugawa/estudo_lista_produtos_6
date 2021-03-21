@@ -32,7 +32,7 @@ sap.ui.define([
 				 //                 })				
 			      //           ) 
                 
-				// Exemplo  de filtro com 'OR'
+				// Exemplo  de filtro com 'OR'/
 				var sValueLower = sNewValue.toLowerCase();
                 var sValueUpper = sNewValue.toUpperCase();
 				var sValueUpLow = sNewValue[0].toUpperCase() + sNewValue.substr(1).toLowerCase();  
